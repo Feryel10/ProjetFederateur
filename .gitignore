@@ -7,3 +7,20 @@
 .env
 .env.*
 !.env.example
+# AWS credentials and local configuration
+.aws/
+credentials
+config.local
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Local backup files
+*.backup
