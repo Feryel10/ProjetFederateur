@@ -1,0 +1,45 @@
+# Terraform state and variables
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Terraform temporary directories
+.terraform/
+**/.terraform/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Terraform state and variables
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Terraform temporary directories
+.terraform/
+**/.terraform/
+
+# Secrets
+.env
+.env.*
+!.env.example
+@'
+# Terraform state and variables
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Terraform temporary directories
+.terraform/
+**/.terraform/
+
+# Secrets
+.env
+.env.*
+!.env.example
+'@ | Set-Content -Path .gitignore
