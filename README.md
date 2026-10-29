@@ -53,6 +53,21 @@ ProjetFederateur/
 
 ## Architecture Overview
 
+```mermaid
+flowchart TD
+    DEV["Developer"] --> TF["Terraform"]
+    TF --> AWS["AWS Infrastructure"]
+    AWS --> IAM["IAM Permissions"]
+    AWS --> S3["Amazon S3"]
+    AWS --> DNS["Route 53"]
+    AWS --> ACM["Certificate Manager"]
+    USER["Website Visitor"] --> DNS
+    DNS --> SITE["Website Hosting"]
+    S3 --> SITE
+    ACM -. "Certificate configuration" .-> SITE
+```
+
+
 Terraform manages the infrastructure configuration and provisions the AWS resources defined in the project.
 
 The intended website flow is:
